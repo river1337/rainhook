@@ -1,4 +1,4 @@
-local httpService = game:GetService('HttpService')
+    local httpService = game:GetService('HttpService')
 
     local SaveManager = {} do
         SaveManager.Folder = 'LinoriaLibSettings'
@@ -267,3 +267,5 @@ local httpService = game:GetService('HttpService')
 
         SaveManager:BuildFolderTree()
     end
+
+    return SaveManager
