@@ -1,4 +1,4 @@
-local Renderer = {DrawList = {}}
+    local Renderer = {DrawList = {}}
 
     function Renderer:FindExistingShape(name)
         local Shape = self.DrawList[name]
