@@ -166,7 +166,7 @@ local Renderer = {DrawList = {}}
             Shape.From = from
             Shape.To = to
             Shape.Color = color
-            Shape.Thickness = thickness
+            --Shape.Thickness = thickness
             Shape.Transparency = 1
         else
             Shape = Drawing.new("Line")
@@ -174,7 +174,7 @@ local Renderer = {DrawList = {}}
             Shape.From = from
             Shape.To = to
             Shape.Color = color
-            Shape.Thickness = thickness
+            --Shape.Thickness = thickness
             Shape.Transparency = 1
             
             self.DrawList[name] = Shape
