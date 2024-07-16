@@ -139,7 +139,6 @@ function Library:ApplyTextStroke(Inst)
 
     Library:Create('UIStroke', {
         Color = Color3.new(0, 0, 0);
-        Thickness = 1;
         LineJoinMode = Enum.LineJoinMode.Miter;
         Parent = Inst;
     });
