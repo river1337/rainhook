@@ -31,10 +31,10 @@ local Library = {
 
     HudRegistry = {};
 
-    AccentColor = Color3.fromRGB(140, 130, 255)
     FontColor = Color3.fromRGB(255, 255, 255);
     MainColor = Color3.fromRGB(28, 28, 28);
     BackgroundColor = Color3.fromRGB(20, 20, 20);
+    AccentColor = Color3.fromRGB(140, 130, 255);
     OutlineColor = Color3.fromRGB(50, 50, 50);
     RiskColor = Color3.fromRGB(255, 50, 50),
 
@@ -388,7 +388,7 @@ function Library:Unload()
         Connection:Disconnect()
     end
 
-    -- Call our unload callback, maybe to undo some hooks etc
+     -- Call our unload callback, maybe to undo some hooks etc
     if Library.OnUnload then
         Library.OnUnload()
     end
@@ -450,7 +450,7 @@ do
             Size = UDim2.new(0, 27, 0, 13);
             ZIndex = 5;
             Image = 'http://www.roblox.com/asset/?id=12977615774';
-            Visible = Info.Transparency;
+            Visible = not not Info.Transparency;
             Parent = DisplayFrame;
         });
 
@@ -3607,7 +3607,7 @@ function Library:CreateWindow(...)
             if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode.Name == Library.ToggleKeybind.Value then
                 task.spawn(Library.Toggle)
             end
-        elseif Input.KeyCode == Enum.KeyCode.Insert then
+        elseif Input.KeyCode == Enum.KeyCode.RightControl or (Input.KeyCode == Enum.KeyCode.RightShift and (not Processed)) then
             task.spawn(Library.Toggle)
         end
     end))
