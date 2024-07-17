@@ -1,5 +1,8 @@
 -- octohook edit i think
 
+-- Override Drawing Library so celery works (Using Solara's library)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/quivings/Solara/main/Storage/Drawing.lua"))()
+
 local startupArgs = ({...})[1] or {}
 
 if getgenv().library ~= nil then
