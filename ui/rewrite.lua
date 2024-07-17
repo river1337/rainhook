@@ -3180,7 +3180,6 @@ function Library:CreateWindow(...)
             Library:AddToRegistry(Highlight, {
                 BackgroundColor3 = 'AccentColor';
             });
-            
         end;
 
         function Tab:HideTab()
