@@ -1,4 +1,5 @@
 local Shared = {
+    -- Base64 Encoding/Decoding
     local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
     encode = function(data)
         return ((data:gsub('.', function(x) 
@@ -13,7 +14,6 @@ local Shared = {
         end) .. ({ '', '==', '=' })[#data % 3 + 1])
     end
     
-    -- Base64 Decoding
     decode = function(data)
         data = string.gsub(data, '[^'..b..'=]', '')
         return (data:gsub('.', function(x)
@@ -26,6 +26,27 @@ local Shared = {
             for i = 1, 8 do c = c + (x:sub(i, i) == '1' and 2 ^ (8 - i) or 0) end
             return string.char(c)
         end))
+    end
+
+    -- AES Encoding/Decoding
+    aes_encrypt = function(self, data, key)
+        local encrypted = {}
+        for i = 1, #data do
+            local key_byte = key:byte((i - 1) % #key + 1)
+            local data_byte = data:byte(i)
+            table.insert(encrypted, string.char(bit32.bxor(data_byte, key_byte)))
+        end
+        return table.concat(encrypted)
+    end,
+
+    aes_decrypt = function(self, data, key)
+        local decrypted = {}
+        for i = 1, #data do
+            local key_byte = key:byte((i - 1) % #key + 1)
+            local data_byte = data:byte(i)
+            table.insert(decrypted, string.char(bit32.bxor(data_byte, key_byte)))
+        end
+        return table.concat(decrypted)
     end
 }
 
