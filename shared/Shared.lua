@@ -1,6 +1,6 @@
 local Shared = {
     local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-    function encode(data)
+    encode = function(data)
         return ((data:gsub('.', function(x) 
             local r, b = '', x:byte()
             for i = 8, 1, -1 do r = r .. (b % 2 ^ i - b % 2 ^ (i - 1) > 0 and '1' or '0') end
@@ -14,7 +14,7 @@ local Shared = {
     end
     
     -- Base64 Decoding
-    function decode(data)
+    decode = function(data)
         data = string.gsub(data, '[^'..b..'=]', '')
         return (data:gsub('.', function(x)
             if (x == '=') then return '' end
