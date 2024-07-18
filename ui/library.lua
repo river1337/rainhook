@@ -103,6 +103,32 @@ library.themes = {
         }
     },
     {
+        name = 'Bbot',
+        theme = {
+            ['Accent'] =                     Color3.fromRGB(181, 145, 245),
+            ['Background'] =                 Color3.fromRGB(24, 22, 31),
+            ['Border'] =                     Color3.fromRGB(0, 0, 0),
+            ['Border 1'] =                   Color3.fromRGB(50, 50, 50),
+            ['Border 2'] =                   Color3.fromRGB(30, 25, 38),
+            ['Border 3'] =                   Color3.fromRGB(10, 10, 10),
+            ['Primary Text'] =               Color3.fromRGB(235, 235, 235),
+            ['Group Background'] =           Color3.fromRGB(30, 25, 38),
+            ['Selected Tab Background'] =    Color3.fromRGB(30, 25, 38),
+            ['Unselected Tab Background'] =  Color3.fromRGB(25, 22, 31),
+            ['Selected Tab Text'] =          Color3.fromRGB(245, 245, 245),
+            ['Unselected Tab Text'] =        Color3.fromRGB(145, 145, 145),
+            ['Section Background'] =         Color3.fromRGB(25, 22, 31),
+            ['Option Text 1'] =              Color3.fromRGB(245, 245, 245),
+            ['Option Text 2'] =              Color3.fromRGB(195, 195, 195),
+            ['Option Text 3'] =              Color3.fromRGB(145, 145, 145),
+            ['Option Border 1'] =            Color3.fromRGB(50, 50, 50),
+            ['Option Border 2'] =            Color3.fromRGB(0, 0, 0),
+            ['Option Background'] =          Color3.fromRGB(30, 25, 38),
+            ["Risky Text"] =                 Color3.fromRGB(175, 21, 21),
+            ["Risky Text Enabled"] =         Color3.fromRGB(255, 41, 41),
+        }
+    },
+    {
         name = 'octohook',
         theme = {
             ['Accent']                    = fromrgb(255,135,255);
@@ -124,6 +150,84 @@ library.themes = {
             ['Option Border 1']           = fromrgb(50,50,50);
             ['Option Border 2']           = fromrgb(0,0,0);
             ['Option Background']         = fromrgb(35,35,35);
+            ["Risky Text"]                = fromrgb(175, 21, 21);
+            ["Risky Text Enabled"]        = fromrgb(255, 41, 41);
+        }
+    },
+    {
+        name = 'octohook blue',
+        theme = {
+            ['Accent']              = Color3.fromRGB(77, 160, 255),
+            ['Background']          = Color3.fromRGB(15,15,20),
+            ['Border']              = Color3.fromRGB(0,0,0),
+            ['Border 1']            = Color3.fromRGB(10,10,15),
+            ['Border 2']            = Color3.fromRGB(45,45,50),
+            ['Border 3']            = Color3.fromRGB(35,35,40),
+            ['Primary Text']        = Color3.fromRGB(240,240,240),
+            ['Secondary Text']      = Color3.fromRGB(145, 145, 145),
+            ['Group Background']    = Color3.fromRGB(20,20,25),
+            ['Selected Tab']        = Color3.fromRGB(20,20,25),
+            ['Unselected Tab']      = Color3.fromRGB(23,23,28),
+            ['Selected Tab Text']   = Color3.fromRGB(240,240,240),
+            ['Unselected Tab Text'] = Color3.fromRGB(145,145,145),
+            ['Section Background']  = Color3.fromRGB(18,18,23),
+            ['Option Text 1']       = Color3.fromRGB(235,235,235),
+            ['Option Text 2']       = Color3.fromRGB(155,155,155),
+            ['Option Border 1']     = Color3.fromRGB(45,45,50),
+            ['Option Border 2']     = Color3.fromRGB(0,0,0),
+            ['Option Background']   = Color3.fromRGB(31,31,34),
+            ["Risky Text"]          = Color3.fromRGB(175, 21, 21),
+            ["Risky Text Enabled"]  = Color3.fromRGB(255, 41, 41),
+        }
+    },
+    {
+        name = 'Nekocheat',
+        theme = {
+            ["Accent"]                    = fromrgb(226, 30, 112);
+            ["Background"]                = fromrgb(18,18,18);
+            ["Border"]                    = fromrgb(0,0,0);
+            ["Border 1"]                  = fromrgb(60,60,60);
+            ["Border 2"]                  = fromrgb(18,18,18);
+            ["Border 3"]                  = fromrgb(10,10,10);
+            ["Primary Text"]              = fromrgb(255,255,255);
+            ["Group Background"]          = fromrgb(18,18,18);
+            ["Selected Tab Background"]   = fromrgb(18,18,18);
+            ["Unselected Tab Background"] = fromrgb(18,18,18);
+            ["Selected Tab Text"]         = fromrgb(245,245,245);
+            ["Unselected Tab Text"]       = fromrgb(145,145,145);
+            ["Section Background"]        = fromrgb(18,18,18);
+            ["Option Text 1"]             = fromrgb(255,255,255);
+            ["Option Text 2"]             = fromrgb(255,255,255);
+            ["Option Text 3"]             = fromrgb(255,255,255);
+            ["Option Border 1"]           = fromrgb(50,50,50);
+            ["Option Border 2"]           = fromrgb(0,0,0);
+            ["Option Background"]         = fromrgb(23,23,23);
+            ["Risky Text"]                = fromrgb(175, 21, 21);
+            ["Risky Text Enabled"]        = fromrgb(255, 41, 41);
+        }
+    },
+    {
+        name = 'Nekocheat Blue',
+        theme = {
+            ["Accent"]                    = fromrgb(0, 247, 255);
+            ["Background"]                = fromrgb(18,18,18);
+            ["Border"]                    = fromrgb(0,0,0);
+            ["Border 1"]                  = fromrgb(60,60,60);
+            ["Border 2"]                  = fromrgb(18,18,18);
+            ["Border 3"]                  = fromrgb(10,10,10);
+            ["Primary Text"]              = fromrgb(255,255,255);
+            ["Group Background"]          = fromrgb(18,18,18);
+            ["Selected Tab Background"]   = fromrgb(18,18,18);
+            ["Unselected Tab Background"] = fromrgb(18,18,18);
+            ["Selected Tab Text"]         = fromrgb(245,245,245);
+            ["Unselected Tab Text"]       = fromrgb(145,145,145);
+            ["Section Background"]        = fromrgb(18,18,18);
+            ["Option Text 1"]             = fromrgb(255,255,255);
+            ["Option Text 2"]             = fromrgb(255,255,255);
+            ["Option Text 3"]             = fromrgb(255,255,255);
+            ["Option Border 1"]           = fromrgb(50,50,50);
+            ["Option Border 2"]           = fromrgb(0,0,0);
+            ["Option Background"]         = fromrgb(23,23,23);
             ["Risky Text"]                = fromrgb(175, 21, 21);
             ["Risky Text Enabled"]        = fromrgb(255, 41, 41);
         }
