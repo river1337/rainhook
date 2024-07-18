@@ -79,7 +79,7 @@ library.themes = {
     {
         name = 'Default',
         theme = {
-            ['Accent']                       = Color3.fromRGB(77, 160, 255),
+            ['Accent']                       = Color3.fromRGB(150, 107, 206),
             ['Background']                   = Color3.fromRGB(15,15,20),
             ['Border']                       = Color3.fromRGB(0,0,0),
             ['Border 1']                     = Color3.fromRGB(10,10,15),
