@@ -79,6 +79,32 @@ library.themes = {
     {
         name = 'Default',
         theme = {
+            ['Accent']                    = fromrgb(181,145,245);
+            ['Background']                = fromrgb(24,22,31);
+            ['Border']                    = fromrgb(0,0,0);
+            ['Border 1']                  = fromrgb(50,50,50);
+            ['Border 2']                  = fromrgb(30,25,38);
+            ['Border 3']                  = fromrgb(10,10,10);
+            ['Primary Text']              = fromrgb(235,235,235);
+            ['Group Background']          = fromrgb(30,25,38);
+            ['Selected Tab Background']   = fromrgb(30,25,38);
+            ['Unselected Tab Background'] = fromrgb(25,22,31);
+            ['Selected Tab Text']         = fromrgb(245,245,245);
+            ['Unselected Tab Text']       = fromrgb(145,145,145);
+            ['Section Background']        = fromrgb(25,22,31);
+            ['Option Text 1']             = fromrgb(245,245,245);
+            ['Option Text 2']             = fromrgb(195,195,195);
+            ['Option Text 3']             = fromrgb(145,145,145);
+            ['Option Border 1']           = fromrgb(50,50,50);
+            ['Option Border 2']           = fromrgb(0,0,0);
+            ['Option Background']         = fromrgb(30,25,38);
+            ["Risky Text"]                = fromrgb(175, 21, 21);
+            ["Risky Text Enabled"]        = fromrgb(255, 41, 41);
+        }
+    },
+    {
+        name = 'octohook',
+        theme = {
             ["Accent"]                    = fromrgb(204, 45, 45);
             ["Background"]                = fromrgb(18,18,18);
             ["Border"]                    = fromrgb(0,0,0);
@@ -98,32 +124,6 @@ library.themes = {
             ["Option Border 1"]           = fromrgb(50,50,50);
             ["Option Border 2"]           = fromrgb(0,0,0);
             ["Option Background"]         = fromrgb(23,23,23);
-            ["Risky Text"]                = fromrgb(175, 21, 21);
-            ["Risky Text Enabled"]        = fromrgb(255, 41, 41);
-        }
-    },
-    {
-        name = 'rainhook.vip',
-        theme = {
-            ['Accent']                    = fromrgb(161,192,255);
-            ['Background']                = fromrgb(22,22,31);
-            ['Border']                    = fromrgb(0,0,0);
-            ['Border 1']                  = fromrgb(50,50,50);
-            ['Border 2']                  = fromrgb(24,25,37);
-            ['Border 3']                  = fromrgb(10,10,10);
-            ['Primary Text']              = fromrgb(235,235,235);
-            ['Group Background']          = fromrgb(24,25,37);
-            ['Selected Tab Background']   = fromrgb(24,25,37);
-            ['Unselected Tab Background'] = fromrgb(22,22,31);
-            ['Selected Tab Text']         = fromrgb(245,245,245);
-            ['Unselected Tab Text']       = fromrgb(145,145,145);
-            ['Section Background']        = fromrgb(22,22,31);
-            ['Option Text 1']             = fromrgb(245,245,245);
-            ['Option Text 2']             = fromrgb(195,195,195);
-            ['Option Text 3']             = fromrgb(145,145,145);
-            ['Option Border 1']           = fromrgb(50,50,50);
-            ['Option Border 2']           = fromrgb(0,0,0);
-            ['Option Background']         = fromrgb(24,25,37);
             ["Risky Text"]                = fromrgb(175, 21, 21);
             ["Risky Text Enabled"]        = fromrgb(255, 41, 41);
         }
